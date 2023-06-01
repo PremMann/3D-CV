@@ -1,9 +1,17 @@
 import { motion } from "framer-motion";
+import Select from 'react-select'
 
 import { styles } from "../styles";
 import { ComputersCanvas } from "./canvas";
 
 const Hero = () => {
+
+  const options = [
+    { value: 'chocolate', label: 'Chocolate' },
+    { value: 'strawberry', label: 'Strawberry' },
+    { value: 'vanilla', label: 'Vanilla' }
+  ]
+
   return (
     <section className="relative w-full h-screen mx-auto">
       <div className={`${styles.paddingX} absolute inset-0
@@ -26,9 +34,17 @@ const Hero = () => {
             JavaScript, React.js, Tailwind CSS, and SASS. In addition, 
             I have experience working with PHP and React Native.
           </p>
+
+
+          <Select options={options} />
+
+
+
+
         </div>
       </div>
 
+      <ComputersCanvas />
     </section>
   )
 }
