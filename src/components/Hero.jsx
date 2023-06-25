@@ -3,6 +3,7 @@ import Select from 'react-select'
 
 import { styles } from "../styles";
 import { ComputersCanvas } from "./canvas";
+import { FaBeer } from "react-icons/fa"
 
 const Hero = () => {
 
@@ -25,21 +26,15 @@ const Hero = () => {
             Hi I am <span className="text-[#915eff]">GG</span>
           </h1>
           <p className={`${styles.heroSubText} mt-2 text-white-100`}>
-            Hi there, my name is Prem MANN and I'm a software developer with 
-            experience in web application development and database management. 
+            Hi there, 
             I'm currently working as a React Developer at Krawma & Associates, 
-            where I specialize in billing systems development and optimizing 
-            applications for maximum speed and scalability. My expertise in 
-            front-end development includes proficiency in technologies such as 
-            JavaScript, React.js, Tailwind CSS, and SASS. In addition, 
+            My expertise in front-end development includes proficiency in 
+            technologies such as JavaScript, React.js, Tailwind CSS, and SASS. In addition, 
             I have experience working with PHP and React Native.
           </p>
 
 
           <Select options={options} />
-
-
-
 
         </div>
       </div>
