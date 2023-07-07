@@ -1,9 +1,67 @@
+import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import Select from 'react-select'
 
 import { styles } from "../styles";
 import { ComputersCanvas } from "./canvas";
-import { FaBeer } from "react-icons/fa"
+import axios from "axios";
+
+const  ChattyApp = () => {
+  const [input, setInput] = useState("");
+  const [completedSentence, setCompletedSentence] = useState("");
+  
+  async function handleClick() {
+    try {
+      const completedSentence = await fetchData(input);
+      setCompletedSentence(completedSentence);
+    } catch (error) {
+      console.error(error);
+    }
+  }
+
+  const API_KEY = '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';
+  const MODEL_NAME = "text-davinci-003";
+
+  const fetchData = async (input) => {
+    const response = await axios.post(
+      "https://api.openai.com/v1/completions",
+      {
+        prompt: input,
+        model: MODEL_NAME,
+        temperature: 0.9,
+        max_tokens: 150,
+        top_p: 1,
+        frequency_penalty: 0.0,
+        presence_penalty: 0.6,
+        stop: [" Human:", " AI:"],
+      },
+      {
+        headers: {
+          "Content-Type": "application/json",
+          Authorization: `Bearer ${API_KEY}`,
+        },
+      }
+    );
+    return response.data.choices[0].text;
+  };
+
+  return (
+    <div className="container flex flex-col">
+      <h2>Tell me something, and I'll tell you more</h2>
+      <textarea
+        value={input}
+        onChange={(event) => setInput(event.target.value)}
+        rows={5}
+        placeholder="Type in some words and I'll finish the rest..."
+      />
+      <button className="button" onClick={handleClick}>Send</button>
+      {completedSentence && <p> {completedSentence}</p>}
+    </div>
+  );
+}
+
+
+
 
 const Hero = () => {
 
@@ -12,6 +70,7 @@ const Hero = () => {
     { value: 'strawberry', label: 'Strawberry' },
     { value: 'vanilla', label: 'Vanilla' }
   ]
+
 
   return (
     <section className="relative w-full h-screen mx-auto">
@@ -22,7 +81,7 @@ const Hero = () => {
             <div className="w-1 sm:h-80 h-40 violet-gradient" />
         </div>
         <div>
-          <h1 className={`${styles.heroHeadText} text-white`}>
+          {/* <h1 className={`${styles.heroHeadText} text-white`}>
             Hi I am <span className="text-[#915eff]">GG</span>
           </h1>
           <p className={`${styles.heroSubText} mt-2 text-white-100`}>
@@ -34,14 +93,18 @@ const Hero = () => {
           </p>
 
 
-          <Select options={options} />
+          <Select options={options} /> */}
+
+          <ChattyApp />
 
         </div>
       </div>
 
-      <ComputersCanvas />
+      {/* <ComputersCanvas /> */}
     </section>
   )
 }
 
 export default Hero
+
+
