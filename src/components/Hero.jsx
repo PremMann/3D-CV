@@ -19,8 +19,8 @@ const  ChattyApp = () => {
     }
   }
 
-  const API_KEY = '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';
-  const MODEL_NAME = "text-davinci-003";
+  const API_KEY = '';
+  const MODEL_NAME = "";
 
   const fetchData = async (input) => {
     const response = await axios.post(
