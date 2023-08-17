@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import Select from 'react-select'
 
 import { styles } from "../styles";
+// import { ComputersCanvas } from "./canvas";
 import { ComputersCanvas } from "./canvas";
 import axios from "axios";
 
@@ -19,8 +20,8 @@ const  ChattyApp = () => {
     }
   }
 
-  const API_KEY = '';
-  const MODEL_NAME = "";
+  const API_KEY = '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';
+  const MODEL_NAME = 'text-davinci-003';
 
   const fetchData = async (input) => {
     const response = await axios.post(
@@ -47,7 +48,7 @@ const  ChattyApp = () => {
 
   return (
     <div className="container flex flex-col">
-      <h2>Tell me something, and I'll tell you more</h2>
+      <h2>Testing Chat</h2>
       <textarea
         value={input}
         onChange={(event) => setInput(event.target.value)}
@@ -59,6 +60,7 @@ const  ChattyApp = () => {
     </div>
   );
 }
+
 
 
 
@@ -81,26 +83,42 @@ const Hero = () => {
             <div className="w-1 sm:h-80 h-40 violet-gradient" />
         </div>
         <div>
-          {/* <h1 className={`${styles.heroHeadText} text-white`}>
+          <h1 className={`${styles.heroHeadText} text-white`}>
             Hi I am <span className="text-[#915eff]">GG</span>
           </h1>
           <p className={`${styles.heroSubText} mt-2 text-white-100`}>
             Hi there, 
-            I'm currently working as a React Developer at Krawma & Associates, 
-            My expertise in front-end development includes proficiency in 
-            technologies such as JavaScript, React.js, Tailwind CSS, and SASS. In addition, 
-            I have experience working with PHP and React Native.
+            I'm a React Developer at Krawma & Associates
           </p>
 
 
-          <Select options={options} /> */}
+          {/* <Select options={options} />
 
-          <ChattyApp />
+          <ChattyApp /> */}
 
         </div>
       </div>
 
-      {/* <ComputersCanvas /> */}
+      <ComputersCanvas />
+      <div className="absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center">
+        <a href="#about">
+          <div className="w-[35px] h-[64px] rounded-3xl border-4 border-secondary flex justify-center items-start p2">
+              <motion.dev 
+                animate={{
+                  y: [0, 24, 0]
+                }}
+                transition={{
+                duration: 1.5,
+                repeat: Infinity, 
+                repeatType: 'loop'
+              }}
+                className="w-3 h-3 rounded-full bg-secondary mb-1"
+              />
+          </div>
+        </a>
+
+      </div>
+
     </section>
   )
 }

@@ -116,15 +116,15 @@ import {
   
   const experiences = [
     {
-      title: "React.js Developer",
-      company_name: "Starbucks",
+      title: "IOS Developer Internship",
+      company_name: "W.E Bridge Technologies",
       icon: starbucks,
       iconBg: "#383E56",
-      date: "March 2020 - April 2021",
+      date: "June 2018 - December 2018",
       points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
+        "Working on Objective C",
+        "Edit some feature on HenkelCRM App and iBrain Teacher App.",
+        "Create and testing on HR App",
         "Participating in code reviews and providing constructive feedback to other developers.",
       ],
     },
