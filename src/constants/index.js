@@ -8,6 +8,7 @@ import {
     html,
     css,
     reactjs,
+    php,
     redux,
     tailwind,
     nodejs,
@@ -18,11 +19,15 @@ import {
     meta,
     starbucks,
     tesla,
+    krawma,
+    allweb,
+    weeeee,
     shopify,
     carrent,
     jobit,
     tripguide,
     threejs,
+    bootstrap,
   } from "../assets";
   
   export const navLinks = [
@@ -54,7 +59,7 @@ import {
       icon: backend,
     },
     {
-      title: "Content Creator",
+      title: "Video Creator ",
       icon: creator,
     },
   ];
@@ -73,28 +78,12 @@ import {
       icon: javascript,
     },
     {
-      name: "TypeScript",
-      icon: typescript,
-    },
-    {
       name: "React JS",
       icon: reactjs,
     },
     {
-      name: "Redux Toolkit",
-      icon: redux,
-    },
-    {
       name: "Tailwind CSS",
       icon: tailwind,
-    },
-    {
-      name: "Node JS",
-      icon: nodejs,
-    },
-    {
-      name: "MongoDB",
-      icon: mongodb,
     },
     {
       name: "Three JS",
@@ -105,66 +94,58 @@ import {
       icon: git,
     },
     {
-      name: "figma",
-      icon: figma,
+      name: "PHP",
+      icon: php,
     },
     {
-      name: "docker",
-      icon: docker,
-    },
+      name: "Bootstrap",
+      icon: bootstrap,
+    }
   ];
   
   const experiences = [
     {
-      title: "IOS Developer Internship",
+      title: "React Native Developer",
+      company_name: "Krawma & Associates",
+      icon: krawma,
+      iconBg: "white",
+      date: "Feb 2022 - Present",
+      points: [
+       "Web application development",
+       "Billing systems development and reconciliation",
+       "Database management, Data summary & analysis",
+       "Build reusable code and libraries for future use",
+       "Optimize application for maximum speed and scalability",
+       "Roll-out concepts and timing",
+       "Present and defend work and key milestone deliverables to the development team, management, and stakeholders",
+       "Establish and promote design guidelines, best practices, and standards",
+      ],
+    },
+    {
+      title: "Web Developer (PHP)",
+      company_name: "ALLWEB Co., Ltd",
+      icon: allweb,
+      iconBg: "white",
+      date: "January 2019 – December 2021",
+      points: [
+        "Design, build, and maintain efficient, reusable, and reliable PHP applications.",
+        "Debug existing systems.",
+        "Analyze the specifications given by the clients, feedback and impacts, regression and technical implements afterward.",
+        "Review Code.",
+        "Write Test Case.",
+        "Help Teams (Cambodia, France, Vietnam)"
+      ],
+    },
+    {
+      title: "Internship",
       company_name: "W.E Bridge Technologies",
-      icon: starbucks,
-      iconBg: "#383E56",
-      date: "June 2018 - December 2018",
+      icon: weeeee,
+      iconBg: "rgb(0 191 237)",
+      date: "June 2018 – December 2018",
       points: [
         "Working on Objective C",
-        "Edit some feature on HenkelCRM App and iBrain Teacher App.",
+        "Edit some feature on HenkelCRM App and iBrain Teacher App",
         "Create and testing on HR App",
-        "Participating in code reviews and providing constructive feedback to other developers.",
-      ],
-    },
-    {
-      title: "React Native Developer",
-      company_name: "Tesla",
-      icon: tesla,
-      iconBg: "#E6DEDD",
-      date: "Jan 2021 - Feb 2022",
-      points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
-      ],
-    },
-    {
-      title: "Web Developer",
-      company_name: "Shopify",
-      icon: shopify,
-      iconBg: "#383E56",
-      date: "Jan 2022 - Jan 2023",
-      points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
-      ],
-    },
-    {
-      title: "Full stack Developer",
-      company_name: "Meta",
-      icon: meta,
-      iconBg: "#E6DEDD",
-      date: "Jan 2023 - Present",
-      points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
       ],
     },
   ];

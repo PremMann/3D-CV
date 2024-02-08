@@ -3,7 +3,6 @@ import { motion } from "framer-motion";
 import Select from 'react-select'
 
 import { styles } from "../styles";
-// import { ComputersCanvas } from "./canvas";
 import { ComputersCanvas } from "./canvas";
 import axios from "axios";
 
@@ -62,7 +61,7 @@ const  ChattyApp = () => {
 }
 
 
-
+// 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
 
 
 const Hero = () => {
@@ -75,7 +74,8 @@ const Hero = () => {
 
 
   return (
-    <section className="relative w-full h-screen mx-auto">
+
+<section className="relative w-full h-screen mx-auto">
       <div className={`${styles.paddingX} absolute inset-0
       top-[120px] max-w-7xl mx-auto flex flex-row items-start grap-5`}>
         <div className=" flex flex-col justify-center items-center mt-5">
@@ -84,22 +84,17 @@ const Hero = () => {
         </div>
         <div>
           <h1 className={`${styles.heroHeadText} text-white`}>
-            Hi I am <span className="text-[#915eff]">GG</span>
+            Hi I am <span className="text-[#915eff]">Prem</span>
           </h1>
           <p className={`${styles.heroSubText} mt-2 text-white-100`}>
             Hi there, 
             I'm a React Developer at Krawma & Associates
           </p>
 
-
-          {/* <Select options={options} />
-
-          <ChattyApp /> */}
-
         </div>
       </div>
 
-      <ComputersCanvas />
+      {/* <ComputersCanvas /> */}
       <div className="absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center">
         <a href="#about">
           <div className="w-[35px] h-[64px] rounded-3xl border-4 border-secondary flex justify-center items-start p2">

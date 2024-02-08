@@ -10,7 +10,6 @@ const Navbar = () => {
   const [toggle, setToggle] = useState(false);
   return (
     <nav className={`${styles.paddingX} w-ful flex item-center py-5 top-0 z-20 bg-primary`}>
-        {/* <div className='w-full justify-between item-center max-w-7x1 max-auto'> */}
         <div className='w-full flex justify-between items-center max-w-7xl mx-auto'>
           <Link 
             to="/"
@@ -21,8 +20,8 @@ const Navbar = () => {
             }}>
             <img src={logo} alt="logo" className='w-9 h-9 object-contain' />
             <p className='text-white text-[18px] font-bold cursor-pointer flex'>
-               OPEN AI &nbsp;
-               <span className='sm:block hidden'>| GPT</span>
+              PREM &nbsp;
+               <span className='sm:block hidden'> MANN</span>
             </p>
           </Link>
 

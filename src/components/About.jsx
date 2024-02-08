@@ -51,10 +51,12 @@ const About = () => {
       variants={fadeIn("", "", 0.1, 1)}
         className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]'
       >
-        In this example, we use the Canvas component from React Three Fiber to create 
-        the Three.js scene. Inside the Canvas, we define a scene, a perspectiveCamera 
-        (with makeDefault set to true to make it the default camera), and add ambient and 
-        spot lights for better visibility.
+        Hi there, my name is Prem MANN and I'm a software developer with experience in web 
+        application development and database management. I'm currently working as a React 
+        Developer at Krawma & Associates, where I specialize in billing systems development 
+        and optimizing applications for maximum speed and scalability. My expertise in front-end 
+        development includes proficiency in technologies such as JavaScript, React.js, Tailwind CSS, 
+        and SASS. In addition, I have experience working with PHP and React Native.
       </motion.p>
 
       <div className=" mt-20 flex flex-wrap gap-10">
